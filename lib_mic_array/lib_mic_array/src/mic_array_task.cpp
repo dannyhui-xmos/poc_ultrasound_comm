@@ -33,7 +33,7 @@ void mic_array_init(pdm_rx_resources_t *pdm_res, const unsigned *channel_map, un
   assert ((output_samp_freq*STAGE1_DEC_FACTOR*stg2_decimation_factor) == pdm_res->pdm_freq); // assert if it doesn't divide cleanly
   // assert if unsupported decimation factor. (for example. when starting with a pdm_freq of 3.072MHz, supported
   // output sampling freqs are [48000, 32000, 16000]
-  assert ((stg2_decimation_factor == 2) || (stg2_decimation_factor == 3) || (stg2_decimation_factor == 6));
+  assert ((stg2_decimation_factor == 1) || (stg2_decimation_factor == 2) || (stg2_decimation_factor == 3) || (stg2_decimation_factor == 6));
   static uint8_t __attribute__((aligned(8))) mic_storage[sizeof(TMicArray)];
   g_mics = new (mic_storage) TMicArray();
   init_mics_default_filter(g_mics, pdm_res, channel_map, stg2_decimation_factor);

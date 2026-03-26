@@ -124,4 +124,10 @@ extern uint32_t stage1_48k_coefs[MIC_ARRAY_48K_STAGE_1_FILTER_WORD_COUNT];
 extern int32_t stage2_48k_coefs[MIC_ARRAY_48K_STAGE_2_TAP_COUNT];
 extern right_shift_t stage2_48k_shift;
 
+#define MIC_ARRAY_96K_STAGE_1_FILTER_WORD_COUNT 128
+#define MIC_ARRAY_96K_STAGE_2_TAP_COUNT (96)
+extern uint32_t stage1_96k_coefs[MIC_ARRAY_96K_STAGE_1_FILTER_WORD_COUNT];
+extern int32_t stage2_96k_coefs[MIC_ARRAY_96K_STAGE_2_TAP_COUNT];
+extern right_shift_t stage2_96k_shift;
+
 C_API_END
