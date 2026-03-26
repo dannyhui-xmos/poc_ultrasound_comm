@@ -7,5 +7,9 @@ on tile[0]: {
 
 
 on tile[1]: {
-                xk_evk_xu316_AudioHwChanInit(c_i2c);
+                par
+                {
+                    xk_evk_xu316_AudioHwChanInit(c_i2c);
+                    ultrasound_output_task();
+                }
             }

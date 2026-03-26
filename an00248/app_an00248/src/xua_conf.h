@@ -12,7 +12,7 @@
 #define I2S_CHANS_ADC                       0                /* Number of I2S channels in to xCORE */
 #define MCLK_441                            (512 * 44100)    /* 44.1kHz family master clock frequency */
 #define MCLK_48                             (512 * 48000)    /* 48kHz family master clock frequency */
-#define XUA_PDM_MIC_FREQ                    48000            /* Currently sample rate changes are not supported for PDM mics */
+#define XUA_PDM_MIC_FREQ                    96000            /* Currently sample rate changes are not supported for PDM mics */
 #define MIN_FREQ                            XUA_PDM_MIC_FREQ /* Minimum sample rate */
 #define MAX_FREQ                            XUA_PDM_MIC_FREQ /* Maximum sample rate */
 
