@@ -1,0 +1,12 @@
+if("${USING_CUSTOM_CMAKE}" STREQUAL "TRUE")
+    add_custom_target( tests )
+    add_subdirectory( custom_cmake_build )
+else()
+    # XCommon CMake only
+    cmake_minimum_required(VERSION 3.21)
+    include($ENV{XMOS_CMAKE_PATH}/xcommon.cmake)
+    project(mic_array_tests_xccm)
+    add_subdirectory(signal)
+    add_subdirectory(unit)
+    add_subdirectory(test_xs2_benign)
+endif()

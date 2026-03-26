@@ -1,0 +1,25 @@
+# This file relates to internal XMOS infrastructure and should be ignored by external users
+
+an_number: an00248
+an_number_upper: AN00248
+project: '{{an_number}}'
+title: '{{an_number_upper}}: Using lib_xua with lib_mic_array'
+version: 1.1.0
+
+documentation:
+  exclude_patterns_path: doc/exclude-patterns.inc
+  root_doc: doc/rst/an00248.rst
+  linkcheck_ignore_regex: [".*an0000.*"]
+  cognidox_part_number: XM-012763-AN
+  pdfs:
+    doc/rst/an00248.rst:
+      pdf_title: '{{title}}'
+      pdf_filename: '{{an_number}}_v{{version}}'
+      pdf_short: yes
+    README.rst:
+      pdf_title: '{{title}} (README)'
+      pdf_filename: '{{an_number}}_v{{version}}_readme'
+      pdf_short: yes
+
+software:
+  cognidox_part_number: XM-015394-SM
