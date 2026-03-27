@@ -16,10 +16,13 @@
 #define MIN_FREQ                            XUA_PDM_MIC_FREQ /* Minimum sample rate */
 #define MAX_FREQ                            XUA_PDM_MIC_FREQ /* Maximum sample rate */
 
+#define PORT_MCLK_IN_USB                    XS1_PORT_1D
+#define PORT_MCLK_COUNT                     XS1_PORT_16B
+#define PORT_I2S_DAC0                       PORT_I2S_DAC_DATA
 
-#define PORT_MCLK_IN_USB 					XS1_PORT_1D
-#define PORT_MCLK_COUNT 					XS1_PORT_16B
-#define PORT_I2S_DAC0						PORT_I2S_DAC_DATA
+// Ultrasound
+#define US_TILE_NUM                         1
+#define PORT_US_TONE                        XS1_PORT_1O // X1D36: XS1_PORT_1M, X1D38: XS1_PORT_1O
 
 /* Since the PORT defines are done manually above, not in the XN file, lib_xua must be told
  * which tiles the ports are located */
